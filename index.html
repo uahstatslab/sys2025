@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYS2025 Conference</title>
-    <!-- KaTeX for LaTeX (same as main site) -->
+    <title>UAH Stats Lab</title>
+    <!-- KaTeX for LaTeX rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" 
-        onload="renderMathInElement(document.body);"></script>
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false}
+            ]
+        });">
+    </script>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #2c3e50; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>SYS2025 Conference</h1>
-    <p>November 2025 | Hosted by UAH Stats Lab</p>
-    
+    <div class="logo">
+        <h1>SYS2025 Conference</h1>
+        <p>November 2025 | Hosted by UAH Stats Lab</p>
+    </div>
+
     <h2>Call for Papers</h2>
     <p>Submit your work on $$ \nabla_{\theta} \mathcal{L}(\theta) $$ ...</p>
-    
+    <p>Display math example:</p>
+    <p>$$
+    \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}
+    $$</p>
+
     <a href="https://uahstatslab.github.io">← Back to UAH Stats Lab</a>
+
+    <footer>
+        <p>© 2025 UAH Stats Lab | Contact: [your email]</p>
+    </footer>
 </body>
 </html>
